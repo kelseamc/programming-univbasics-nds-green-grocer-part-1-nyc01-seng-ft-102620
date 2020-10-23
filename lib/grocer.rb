@@ -20,5 +20,5 @@ def consolidate_cart(cart)
         scanned_cart << cart_item
       end
     end
-  puts scanned_cart
+  scanned_cart
 end
