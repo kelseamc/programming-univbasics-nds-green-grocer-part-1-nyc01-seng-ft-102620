@@ -11,16 +11,14 @@ end
 
 def consolidate_cart(cart)
   scanned_cart = []
-  cart.each do |cart_hash|
-    scanned_cart.each do |scan_hash|
-      item = find_item_by_name_in_collection(cart_hash[:item], scanned_cart)
+  cart.each do |cart_item|
+      item = find_item_by_name_in_collection(cart_item[:item], scanned_cart)
       if item
           item[:count] += 1
       else
-        cart_hash[:count] = 1
-        scanned_cart << cart_hash
+        cart_item[:count] = 1
+        scanned_cart << cart_item   
       end
     end
-  end
-  return scanned_cart
+  puts scanned_cart
 end
