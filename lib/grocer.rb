@@ -18,7 +18,6 @@ def consolidate_cart(cart)
       else
         cart_hash[:count] = 1
         scanned_cart << cart_hash
-
       end
     end
   end
