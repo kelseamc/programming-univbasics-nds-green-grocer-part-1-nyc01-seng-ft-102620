@@ -19,8 +19,8 @@ def consolidate_cart(cart)
         scanned_cart << cart_hash
         scan_hash[:item][:count] = 1
       end
-      binding.pry
     end
   end
+  binding.pry
   return scanned_cart
 end
