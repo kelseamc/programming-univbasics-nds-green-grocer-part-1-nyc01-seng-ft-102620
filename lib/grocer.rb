@@ -16,8 +16,9 @@ def consolidate_cart(cart)
       if scan_hash == find_item_by_name_in_collection(cart_hash[:item], scanned_cart)
           scan_hash[:count] += 1
       else
+        cart_hash[:count] = 1
         scanned_cart << cart_hash
-        scan_hash[:item][:count] = 1
+
       end
     end
   end
