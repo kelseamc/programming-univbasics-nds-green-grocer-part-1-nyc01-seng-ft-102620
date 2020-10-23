@@ -17,7 +17,7 @@ def consolidate_cart(cart)
           item[:count] += 1
       else
         cart_item[:count] = 1
-        scanned_cart << cart_item   
+        scanned_cart << cart_item
       end
     end
   puts scanned_cart
